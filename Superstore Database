@@ -43,3 +43,9 @@ SELECT SUM(price), item_name, category
 FROM superstore
 WHERE category = 'Kitchen Supplies'
 GROUP BY item_name, category;
+
+#Show how many of each item are in stock in the category of "Furnishings".
+SELECT SUM(stock_quantity), item_name, category
+FROM superstore
+WHERE category = 'Furnishings'
+GROUP BY item_name, category;
